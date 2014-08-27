@@ -3,19 +3,19 @@
  */
 var bookStoreCtrls = angular.module('bookStoreCtrls', []);
 
-bookStoreCtrls.controller('HelloCtrl',['$scope',
-    function($scope){
+bookStoreCtrls.controller('HelloCtrl', ['$scope',
+    function ($scope) {
         $scope.greeting = {
-            text:'Hello'
+            text: 'Hello'
         }
     }
 ]);
 
-bookStoreCtrls.controller('BookListCtrl',['$scope',
-    function($scope){
+bookStoreCtrls.controller('BookListCtrl', ['$scope',
+    function ($scope) {
         $scope.books = [
-            {title:'呵呵',author:'nuomi'},
-            {title:'哈哈',author:'nuomi'}
+            {title: '呵呵', author: 'nuomi'},
+            {title: '哈哈', author: 'nuomi'}
         ]
     }
 ]);
