@@ -10,7 +10,7 @@ seajs.config({
     alias: {
         'jquery':'widget/jquery/jquery.js',
         'bootstrap':'widget/BootStrap/js/bootstrap.min.js',
-        'angular':'widget/AngularJS/angular/angular.min.js',
+        'angular':'widget/Angular/angular.min.js',
         'hammer':'widget/hammer/hammer.js',
         'zepto':'widget/zepto/zepto.js'
     }

@@ -1,2 +1,0 @@
-/*! angular 26-08-2014 */
-define(function(require){require("angular");var myModule=angular.module("MyModule",[]);myModule.directive("hello",function(){return{restrict:"E",template:"<div>123</div>",replace:!0}})});
