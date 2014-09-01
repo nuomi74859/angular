@@ -1,3 +1,4 @@
+@import "compass/css3";
 .main {
   width:100%;
 }
@@ -6,4 +7,122 @@
 }
 .text-green {
   color:#008000;
+}
+.error {
+  color:red;
+}
+.warning {
+  color:greenyellow;
+}
+
+.hello {
+  background:#00D0BC;
+  color:#FFFFFF;
+  @include border-radius(5px);
+  @include background-image(linear-gradient(left top, white, #dddddd));
+  @include opacity(0.8);
+  @include transition(all .8s 1s);
+  @include transform(scale(0.5));
+}
+.list{
+  background:#E59400;
+  color:#FFFFFF;
+}
+@keyframes rotateFall {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: rotateZ(17deg);
+  }
+  60% {
+    transform: rotateZ(16deg);
+  }
+  100% {
+    transform: translateY(100%) rotateZ(17deg);
+  }
+}
+@-webkit-keyframes rotateFall {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: rotateZ(17deg);
+  }
+  60% {
+    transform: rotateZ(16deg);
+  }
+  100% {
+    transform: translateY(100%) rotateZ(17deg);
+  }
+}
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes rotateOutNewspaper {
+  to {
+    transform: translateZ(-3000px) rotateZ(360deg);
+    opacity: 0;
+  }
+}
+@keyframes scaleUp {
+  from {
+    opacity: 0.3;
+    -webkit-transform: scale(0.8);
+  }
+}
+@-webkit-keyframes scaleUp {
+  from {
+    opacity: 0.3;
+    -webkit-transform: scale(0.8);
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform:translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInUp {
+  from {
+    transform:translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.ng-enter {
+  z-index: 8888;
+}
+.ng-leave {
+  z-index: 9999;
+}
+.hello.ng-enter {
+  color:red;
+  animation: scaleUp 0.5s both ease-in;
+  -webkit-animation:scaleUp 0.5s both ease-in;
+}
+.hello.ng-leave {
+  transform-origin: 0% 0%;
+  animation: rotateFall 1s both ease-in;
+  -webkit-animation: rotateFall 10s both ease-in;
+}
+.list.ng-enter {
+  animation:slideInRight 0.5s both ease-in;
+}
+.list.ng-leave {
+  animation:slideOutLeft 0.5s both ease-in;
 }

@@ -7,7 +7,8 @@ myAngularCtrls.controller('HelloCtrl', ['$scope',
     function ($scope) {
         $scope.greeting = {
             text: 'Hello'
-        }
+        };
+        $scope.page = 'hello';
     }
 ]);
 
@@ -16,7 +17,8 @@ myAngularCtrls.controller('BookListCtrl', ['$scope',
         $scope.books = [
             {title: '呵呵', author: 'nuomi'},
             {title: '哈哈', author: 'nuomi'}
-        ]
+        ];
+        $scope.page = 'book';
     }
 ]);
 
@@ -52,5 +54,28 @@ myAngularCtrls.controller('CSSCtrl',['$scope',function($scope){
     $scope.color = 'red';
     $scope.setGreen = function(){
         $scope.color = 'green';
+    }
+}]);
+
+myAngularCtrls.controller('CSSCtrl2',['$scope',function($scope){
+    $scope.messageText = '123';
+    $scope.isError = false;
+    $scope.isWarning = false;
+    $scope.showError = function(){
+        $scope.isError = true;
+        $scope.isWarning= false;
+        $scope.messageText = 'error';
+    };
+    $scope.showWarning = function(){
+        $scope.isWarning = true;
+        $scope.isError= false;
+        $scope.messageText = 'warning';
+    }
+}]);
+
+myAngularCtrls.controller('CSSCtrl3',['$scope',function($scope){
+    $scope.menuState = {show:false};
+    $scope.toggleMenu = function(){
+        $scope.menuState.show = !$scope.menuState.show;
     }
 }]);
