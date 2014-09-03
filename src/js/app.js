@@ -33,3 +33,32 @@ myAngularApp.config(function ($routeProvider) {
             redirectTo: '/'
         })
 });
+//myAngularApp.config(function($stateProvider, $urlRouterProvider){
+//    $urlRouterProvider.otherwise('/index');
+//    $stateProvider
+//        .state('index', {
+//            url:'/index',
+//            views: {
+//                '': {
+//                    templateUrl:'tpls/index.html'
+//                },
+//                'topbar@index':{
+//                    templateUrl:'tpls/topbar.html'
+//                },
+//                'main@index':{
+//                    templateUrl:'tpls/home.html'
+//                }
+//            }
+//        })
+//        .state('index.usermng', {
+//            url:'/usermng',
+//            views: {
+//                'main@index':{
+//                    templateUrl:'tpls/usermng.html',
+//                    controller:function($scope, $state) {
+//                        $state.go('index.usermng.addUsertype');
+//                    }
+//                }
+//            }
+//        })
+//});

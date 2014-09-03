@@ -1,2 +1,2 @@
-/*! angular 28-08-2014 */
+/*! angular 02-09-2014 */
 var bookStoreServices=angular.module("bookStoreServices",[]);bookStoreServices.service("bookStoreService_1",["$scope",function(){}]),bookStoreServices.service("bookStoreService_2",["$scope",function(){}]);
