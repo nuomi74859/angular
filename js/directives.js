@@ -1,2 +1,2 @@
-/*! angular 09-10-2014 */
+/*! angular 10-10-2014 */
 var bookStoreDirectives=angular.module("bookStoreDirectives",[]);bookStoreDirectives.directive("bookStoreDirective_1",["$scope",function(){}]),bookStoreDirectives.directive("bookStoreDirective_2",["$scope",function(){}]);
